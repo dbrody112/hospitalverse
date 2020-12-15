@@ -79,7 +79,7 @@ export const Filtered= () =>{
 					<h3>{(parseFloat(name.split(",")[0])*0.62137119).toFixed(2)} miles away</h3>
 					<h3>Score: {name.split(",")[3].split('$')[0] == -1? 'N/A':(parseFloat(name.split(",")[3].split('$')[0])).toFixed(2)}</h3>
 					<h3>Average Rating (Out of 5): {name.split(",")[4].split('$')[0]}</h3>
-					#<h3>Average Rating (Out of 5): {(parseInt(name.split(",")[4].split('$')[0])).toFixed(0)}</h3> (update but committed late)
+					//<h3>Average Rating (Out of 5): {(parseInt(name.split(",")[4].split('$')[0])).toFixed(0)}</h3> (update but committed late)
 				</Button>
 				{success === true ? <Redirect to = '/hospital_page'/>:<br/>}
 				<br/>
