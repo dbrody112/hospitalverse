@@ -14,7 +14,7 @@ import googlemaps
 import numpy as np
 import pandas as pd
 from sqlalchemy.sql import func
-gmaps = googlemaps.Client('AIzaSyArVIqU7hvCytzs1IcF7r4-It5jaiDFla0')
+gmaps = googlemaps.Client(<API KEY>)
 
 
 
