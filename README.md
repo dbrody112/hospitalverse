@@ -20,4 +20,6 @@ Latest versions of:
 <li>marshmallow</li>
 <li>marshmallow-sqlalchemy</li>
 <li>flask-sqlalchemy</li>
+<li>passlib</li>
+<li>flask jwt extended</li>
 
