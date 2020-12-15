@@ -13,7 +13,7 @@ import regex as re
 import googlemaps
 import glob
 from datetime import datetime
-gmaps = googlemaps.Client('AIzaSyB1Z-6bjs8iuKOQPmHAGytnDFg13idfheI')
+gmaps = googlemaps.Client('<API Key>')
 # In[2]:
 def calculate_complete_score(hrc_score, hospital_name, hospital_latitude, hospital_longitude, hate_groups,max_dist,current_year,hate_group):
     if(hrc_score == 'N/A' or hrc_score == float("nan")):
