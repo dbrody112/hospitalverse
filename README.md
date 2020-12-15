@@ -8,12 +8,16 @@ Requirements:
 Latest versions of:
 <li>python</li>
 <li>semantic UI</li>
-react-router-dom
-react
-flask
-glob
-beautifulsoup
-numpy
-pandas
-bootstrap
+<li>react-router-dom</li>
+<li>react</li>
+<li>flask</li>
+<li>glob</li>
+<li>beautifulsoup</li>
+<li>numpy</li>
+<li>pandas</li>
+<li>bootstrap</li>
+<li>sqlalchemy</li>
+<li>marshmallow</li>
+<li>marshmallow-sqlalchemy</li>
+<li>flask-sqlalchemy</li>
 
