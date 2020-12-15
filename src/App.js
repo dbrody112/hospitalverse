@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 	  
-        <NavBar/>
+        
 		<Switch>
 			<Route exact path = "/" component = {Login} />
 			<Route path = "/home" component = {Home} />
