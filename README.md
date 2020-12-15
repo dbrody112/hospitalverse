@@ -6,7 +6,7 @@ the src folder for ReactJS, and the rest to connect ReactJS and Flask. Also note
 Requirements:
 
 Latest versions of:
-python
+<li>python</li>
 semantic UI
 react-router-dom
 react
