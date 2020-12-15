@@ -222,20 +222,24 @@ def hospital_search():
     
     hospital_array = np.array(df['hospitals'])
     rating = 0
+    #ratings = [] (update but committed late)
     for i in hospital_array:
         try:
             rating = db.session.query(func.avg(Ratings.rating)).select_from(Ratings).join(Hospital).filter(Hospital.hospital_id == i.hospital_id).all()[0][0]
         except:
             rating = 'N/A'
+        #ratings.append(rating) (update but committed late)
     hospital_names = []
     hospital_ids = []
     hospital_scores = []
     haversines = []
     haversine_array = np.array(df['haversine'])
+    #ratings = np.array(ratings) (update but committed late)
     hospital = []
     #hospitals['hospital name' + str(i)] = 
     for i in range(len(hospital_array)):
         hospital.append([str(haversine_array[i]),hospital_array[i].hospital_name,str(hospital_array[i].hospital_id),str(hospital_array[i].total_score), str(rating) + "$"])
+        # hospital.append([str(haversine_array[i]),hospital_array[i].hospital_name,str(hospital_array[i].hospital_id),str(hospital_array[i].total_score), str(ratings[i]) + "$"]) (update but committed late)
         
     
     return {'hospitals':hospital,'haversines':haversines,"hospital_names":hospital_names, "hospital_ids":hospital_ids, "hospital_scores": hospital_scores,'success':True}
