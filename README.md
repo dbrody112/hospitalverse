@@ -7,7 +7,7 @@ Requirements:
 
 Latest versions of:
 <li>python</li>
-semantic UI
+<li>semantic UI</li>
 react-router-dom
 react
 flask
