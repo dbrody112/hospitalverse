@@ -12,17 +12,8 @@ session = Session()
 from db_scraper import load_data
 import pandas as pd
 
-hospital_csv = pd.read_csv("./final_product_hospital_info.csv")
-hate_group_csv = pd.read_csv("./hate-groups.csv")
-sub_criteria_csv = pd.read_csv("./sub_criteria_df.csv")
-criteria_csv = pd.read_csv("./criteria_df.csv")
-hate_group_csv = pd.read_csv("./hate_group_df.csv")
 
-criteria_df, sub_criteria_df, final_product_hospital_info,hate_group_df = load_data(existing_hospital_csv = hospital_csv,
-                                                                      existing_hate_group_csv = hate_group_csv,
-                                                                      sub_criteria_csv = sub_criteria_csv,
-                                                                      criteria_csv = criteria_csv,
-                                                                      hate_group_csv = hate_group_csv)
+criteria_df, sub_criteria_df, final_product_hospital_info,hate_group_df = load_data()
 def stringCheckNan(x):
     if(x==None or x == float("nan") or x!=x):
         x = 'N/A'
