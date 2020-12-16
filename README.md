@@ -23,7 +23,8 @@ Latest versions of:
 <li>flask-sqlalchemy</li>
 <li>passlib</li>
 <li>flask jwt extended</li>
-ERD:
+
+<strong>ERD</strong:
 
 ![erd](https://user-images.githubusercontent.com/59486373/102302352-e3e9f580-3f26-11eb-8eba-904cac306304.png)
 
