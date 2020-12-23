@@ -177,7 +177,7 @@ def hospital_search():
     town = request.json.get('town')
     state = request.json.get('state')
     zip_code = request.json.get('zip')
-    radius = request.json.get('radius')
+    radius = int(request.json.get('radius'))
     current_year = datetime.now().year
     overall_score = 0
     if(town!=None):
